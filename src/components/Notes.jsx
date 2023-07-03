@@ -8,7 +8,8 @@ function Notes() {
 
   const {data: notes = [], isLoading, error} = useFetchNotesQuery();
   const [deleteNote] = useDeleteNoteMutation();
-
+  
+  // delete function
   const deleteNoteHandler = (id) => {
     deleteNote(id)
   };
